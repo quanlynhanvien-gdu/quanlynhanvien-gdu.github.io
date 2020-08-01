@@ -33,10 +33,9 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-var provider = new firebase.auth.GoogleAuthProvider();
 function loginGoogle() {
     
-    
+    var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().languageCode = 'vi';
     // To apply the default browser preference instead of explicitly setting it.
     // firebase.auth().useDeviceLanguage();
@@ -70,6 +69,7 @@ function loginGoogle() {
         // ...
     });
 }
+
 
 function dang_ky_google() {
     var acc = {};
